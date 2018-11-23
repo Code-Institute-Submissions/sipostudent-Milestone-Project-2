@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
+body {
+    font-size: 80%;
+    letter-spacing: 0.15em;
+    background-color: #222222 !important;
+    font-family: 'Saira', sans-serif;
+}
+
+.navbar {
+    border-bottom: #fff 1px solid;
+    box-shadow: 7px 7px 10px 0px rgba(217, 217, 217, 1);
+    opacity: 0.1;
+}
+
+.background-piece {
+    background-image: linear-gradient(120DEG, #1D89F4, #00DB78, #F7BF18, #D33131);
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
