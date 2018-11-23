@@ -34,3 +34,84 @@ const btnBlue = document.getElementById("btnBlue"); // interactive Element
 const btnStrict = document.querySelector("#strict"); // interactive Element
 const btnOn = document.getElementById("on"); // interactive Element
 const btnStart = document.getElementById("start"); // interactive Element
+
+// EVENT LISTENERS
+btnOn.addEventListener("change", event => {
+    if (btnOn.checked == true) {
+        on = true;
+        scoreTracker.textContent = "-";
+        sound5.play();
+    } else {
+        on = false;
+        scoreTracker.textContent = "";
+        sound6.play();
+        clearColor();
+        clearInterval(intervalId);
+    }
+});
+
+btnStart.addEventListener("click", event => {
+    if (on || win) {
+        reset();
+    }
+});
+
+btnStrict.addEventListener("change", event => {
+    if (btnStrict.checked == true) {
+        strict = true;
+    } else {
+        strict = false;
+    }
+});
+
+btnGreen.addEventListener("click", event => {
+    if (on) {
+        playersequence.push(1);
+        check();
+        one();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+btnRed.addEventListener("click", event => {
+    if (on) {
+        playersequence.push(2);
+        check();
+        two();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+btnYellow.addEventListener("click", event => {
+    if (on) {
+        playersequence.push(3);
+        check();
+        three();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+btnBlue.addEventListener("click", event => {
+    if (on) {
+        playersequence.push(4);
+        check();
+        four();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
