@@ -261,3 +261,11 @@ function sharedVariables() { // applied to multiple functions
     scoreTracker.textContent = attempt;
     intervalId = setInterval(gameAttempt, 800);
 }
+
+// FUNCTION - PLAYER WIN GAME TRIGGER
+function playerWin() {
+    illumColor();
+    scoreTracker.textContent = "'Congratulations! You have won'"; // message displayed if user completes all sequences
+    on = false; // game stops
+    win = true;
+}
