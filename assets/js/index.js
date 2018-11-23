@@ -157,3 +157,53 @@ function gameAttempt() {
         }, 200); // a duration of 200 milliseconds between each 800 millisecond setInterval
     }
 }
+
+// FUNCTIONS - SOUND & BUTTON COLOR TRIGGERS
+function one() {
+    if (sound) {
+        sound1.play(); // when the 'one' function runs 'sound1' will play and btnGreen color will be triggered
+    }
+    sound = true;
+    btnGreen.style.backgroundColor = "#29FF9E"; // Vivid cyan - lime green.
+}
+
+function two() {
+    if (sound) {
+        sound2.play();
+    }
+    sound = true;
+    btnRed.style.backgroundColor = "#E07070"; // Soft red
+}
+
+function three() {
+    if (sound) {
+        sound3.play();
+    }
+    sound = true;
+    btnYellow.style.backgroundColor = "#FAD362"; // Soft orange
+}
+
+function four() {
+    if (sound) {
+        sound4.play();
+    }
+    sound = true;
+    btnBlue.style.backgroundColor = "#66AFF8"; // Soft blue
+}
+
+// FUNCTION - COLOR STATES
+function clearColor() {
+    // buttons original state
+    btnGreen.style.backgroundColor = "#00DB78"; // Pure (or mostly pure) cyan - lime green.
+    btnRed.style.backgroundColor = "#D33131"; // Strong red
+    btnYellow.style.backgroundColor = "#F7BF18"; // Vivid orange
+    btnBlue.style.backgroundColor = "#1D89F4"; // Vivid blue
+}
+
+function illumColor() {
+    // buttons illuminated state
+    btnGreen.style.backgroundColor = "#29FF9E"; // vivid cyan - lime green
+    btnRed.style.backgroundColor = "#E07070"; // soft red
+    btnYellow.style.backgroundColor = "#FAD362"; // soft orange
+    btnBlue.style.backgroundColor = "#66AFF8"; // soft blue
+}
