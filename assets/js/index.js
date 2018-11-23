@@ -116,7 +116,7 @@ btnBlue.addEventListener("click", event => {
     }
 });
 
-// FUNCTIONS
+// FUNCTIONS - LOOP SEQUENCE
 function reset() {
     win = false;
     sequence = [];
@@ -132,5 +132,28 @@ function reset() {
     }
     cpuTry = true;
 
-    intervalId = setInterval(gameAttempt, 800); // game sequence lights will illuminate for a duration of eight hundred milliseconds
+    intervalId = setInterval(gameAttempt, 800); // game sequence lights will illuminate for a duration of eight hundred milliseconds repeat
+}
+
+// FUNCTION - INTERVALS AND COLOR RESET
+function gameAttempt() {
+    on = false;
+
+    if (light == attempt) {
+        clearInterval(intervalId); // if number in light sequence equals number in scoreTracker, cpu action stops and user and begin
+        cpuTry = false;
+        clearColor(); // resets button lights from illuminated back to neutral color
+        on = true;
+    }
+
+    if (cpuTry) {
+        clearColor();
+        setTimeout(() => {
+            if (sequence[light] == 1) one(); // if first item in random light sequence array is '1' then the 'one' function will run
+            if (sequence[light] == 2) two();
+            if (sequence[light] == 3) three();
+            if (sequence[light] == 4) four();
+            light++;
+        }, 200); // a duration of 200 milliseconds between each 800 millisecond setInterval
+    }
 }
