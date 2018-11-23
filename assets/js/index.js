@@ -115,3 +115,22 @@ btnBlue.addEventListener("click", event => {
         }
     }
 });
+
+// FUNCTIONS
+function reset() {
+    win = false;
+    sequence = [];
+    playersequence = [];
+    light = 0;
+    intervalId = 0;
+    attempt = 1;
+    scoreTracker.textContent = 1;
+    success = true;
+    for (var i = 0; i < 20; i++) {
+        // loop which generates a random sequence of numbers for the light 'sequence' array
+        sequence.push(Math.floor(Math.random() * 4) + 1);
+    }
+    cpuTry = true;
+
+    intervalId = setInterval(gameAttempt, 800); // game sequence lights will illuminate for a duration of eight hundred milliseconds
+}
