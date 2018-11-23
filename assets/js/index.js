@@ -207,3 +207,57 @@ function illumColor() {
     btnYellow.style.backgroundColor = "#FAD362"; // soft orange
     btnBlue.style.backgroundColor = "#66AFF8"; // soft blue
 }
+
+// FUNCTION - PLAYER SEQUENCE CHOICE VERIFICATION
+function check() {
+    if (
+        playersequence[playersequence.length - 1] !==
+        sequence[playersequence.length - 1]
+    )
+        success = false; // if playersequence does not equal players last selection then player is incorrect
+
+    if (playersequence.length == 10 && success) { // if player sequence equals cpu given sequence of '10' player wins game
+        setTimeout(() => {
+            sound10.play();
+        }, 400); // 400 millisencond interval before sound plays
+        playerWin();
+    }
+
+    if (success == false) {
+        illumColor(); // button color in illuminated state
+        scoreTracker.textContent = "'Invalid input, please try again'"; // displays text within semi colons is user makes mistake
+        sound8.play();
+        setTimeout(() => {
+            scoreTracker.textContent = attempt;
+            clearColor(); // button color in neutral state
+
+            if (strict) {
+                reset(); // restarts game if user makes a mistake
+            } else {
+                success = true;
+                sharedVariables();
+            }
+        }, 800);
+
+        sound = false;
+    }
+
+    if (attempt == playersequence.length && success && !win) {
+        // if user light & button choice aligns with that of cpu user moves onto next round
+        attempt++;
+
+        setTimeout(() => {
+            sound7.play();
+        }, 400);
+        sharedVariables();
+    }
+}
+
+// FUNCTION - SHARED VARIABLES
+function sharedVariables() { // applied to multiple functions
+    playersequence = [];
+    cpuTry = true;
+    light = 0;
+    scoreTracker.textContent = attempt;
+    intervalId = setInterval(gameAttempt, 800);
+}
