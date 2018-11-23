@@ -45,11 +45,32 @@
             </div>
         </nav>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
-        <script src="assets/js/index.js"></script>
+        <!-- CONTROLS & DISPLAY -->
+        <header id="main-header" class="py-2 bg-primary text-white text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="switches">
+                            <span>Power</span> <label class="myCheckbox"></label><input type="checkbox" class="toggle"
+                                id="on">
+                            <button class="btn btn-default" id="start">Start/Reset</button>
+                            <input type="checkbox" class="toggle" id="strict"> <span>Strict</span>
+                        </div>
+                        <div class="lead" id="attempt"></div>
+                        <div>
+                            Score
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
