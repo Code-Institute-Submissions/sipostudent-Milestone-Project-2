@@ -37,235 +37,237 @@ const btnStart = document.getElementById("start"); // interactive Element
 
 // EVENT LISTENERS
 btnOn.addEventListener("change", event => {
-    if (btnOn.checked == true) {
-        on = true;
-        scoreTracker.textContent = "-";
-        sound5.play();
-    } else {
-        on = false;
-        scoreTracker.textContent = "";
-        sound6.play();
-        clearColor();
-        clearInterval(intervalId);
-    }
+  if (btnOn.checked == true) {
+    on = true;
+    scoreTracker.textContent = "-";
+    sound5.play();
+  } else {
+    on = false;
+    scoreTracker.textContent = "";
+    sound6.play();
+    clearColor();
+    clearInterval(intervalId);
+  }
 });
 
 btnStart.addEventListener("click", event => {
-    if (on || win) {
-        reset();
-    }
+  if (on || win) {
+    reset();
+  }
 });
 
 btnStrict.addEventListener("change", event => {
-    if (btnStrict.checked == true) {
-        strict = true;
-    } else {
-        strict = false;
-    }
+  if (btnStrict.checked == true) {
+    strict = true;
+  } else {
+    strict = false;
+  }
 });
 
 btnGreen.addEventListener("click", event => {
-    if (on) {
-        playersequence.push(1);
-        check();
-        one();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300);
-        }
+  if (on) {
+    playersequence.push(1);
+    check();
+    one();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 300);
     }
+  }
 });
 
 btnRed.addEventListener("click", event => {
-    if (on) {
-        playersequence.push(2);
-        check();
-        two();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300);
-        }
+  if (on) {
+    playersequence.push(2);
+    check();
+    two();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 300);
     }
+  }
 });
 
 btnYellow.addEventListener("click", event => {
-    if (on) {
-        playersequence.push(3);
-        check();
-        three();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300);
-        }
+  if (on) {
+    playersequence.push(3);
+    check();
+    three();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 300);
     }
+  }
 });
 
 btnBlue.addEventListener("click", event => {
-    if (on) {
-        playersequence.push(4);
-        check();
-        four();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300);
-        }
+  if (on) {
+    playersequence.push(4);
+    check();
+    four();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 300);
     }
+  }
 });
 
 // FUNCTIONS - LOOP SEQUENCE
 function reset() {
-    win = false;
-    sequence = [];
-    playersequence = [];
-    light = 0;
-    intervalId = 0;
-    attempt = 1;
-    scoreTracker.textContent = 1;
-    success = true;
-    for (var i = 0; i < 20; i++) {
-        // loop which generates a random sequence of numbers for the light 'sequence' array
-        sequence.push(Math.floor(Math.random() * 4) + 1);
-    }
-    cpuTry = true;
+  win = false;
+  sequence = [];
+  playersequence = [];
+  light = 0;
+  intervalId = 0;
+  attempt = 1;
+  scoreTracker.textContent = 1;
+  success = true;
+  for (var i = 0; i < 20; i++) {
+    // loop which generates a random sequence of numbers for the light 'sequence' array
+    sequence.push(Math.floor(Math.random() * 4) + 1);
+  }
+  cpuTry = true;
 
-    intervalId = setInterval(gameAttempt, 800); // game sequence lights will illuminate for a duration of eight hundred milliseconds repeat
+  intervalId = setInterval(gameAttempt, 800); // game sequence lights will illuminate for a duration of eight hundred milliseconds repeat
 }
 
 // FUNCTION - INTERVALS AND COLOR RESET
 function gameAttempt() {
-    on = false;
+  on = false;
 
-    if (light == attempt) {
-        clearInterval(intervalId); // if number in light sequence equals number in scoreTracker, cpu action stops and user and begin
-        cpuTry = false;
-        clearColor(); // resets button lights from illuminated back to neutral color
-        on = true;
-    }
+  if (light == attempt) {
+    clearInterval(intervalId); // if number in light sequence equals number in scoreTracker, cpu action stops and user and begin
+    cpuTry = false;
+    clearColor(); // resets button lights from illuminated back to neutral color
+    on = true;
+  }
 
-    if (cpuTry) {
-        clearColor();
-        setTimeout(() => {
-            if (sequence[light] == 1) one(); // if first item in random light sequence array is '1' then the 'one' function will run
-            if (sequence[light] == 2) two();
-            if (sequence[light] == 3) three();
-            if (sequence[light] == 4) four();
-            light++;
-        }, 200); // a duration of 200 milliseconds between each 800 millisecond setInterval
-    }
+  if (cpuTry) {
+    clearColor();
+    setTimeout(() => {
+      if (sequence[light] == 1) one(); // if first item in random light sequence array is '1' then the 'one' function will run
+      if (sequence[light] == 2) two();
+      if (sequence[light] == 3) three();
+      if (sequence[light] == 4) four();
+      light++;
+    }, 200); // a duration of 200 milliseconds between each 800 millisecond setInterval
+  }
 }
 
 // FUNCTIONS - SOUND & BUTTON COLOR TRIGGERS
 function one() {
-    if (sound) {
-        sound1.play(); // when the 'one' function runs 'sound1' will play and btnGreen color will be triggered
-    }
-    sound = true;
-    btnGreen.style.backgroundColor = "#29FF9E"; // Vivid cyan - lime green.
+  if (sound) {
+    sound1.play(); // when the 'one' function runs 'sound1' will play and btnGreen color will be triggered
+  }
+  sound = true;
+  btnGreen.style.backgroundColor = "#29FF9E"; // Vivid cyan - lime green.
 }
 
 function two() {
-    if (sound) {
-        sound2.play();
-    }
-    sound = true;
-    btnRed.style.backgroundColor = "#E07070"; // Soft red
+  if (sound) {
+    sound2.play();
+  }
+  sound = true;
+  btnRed.style.backgroundColor = "#E07070"; // Soft red
 }
 
 function three() {
-    if (sound) {
-        sound3.play();
-    }
-    sound = true;
-    btnYellow.style.backgroundColor = "#FAD362"; // Soft orange
+  if (sound) {
+    sound3.play();
+  }
+  sound = true;
+  btnYellow.style.backgroundColor = "#FAD362"; // Soft orange
 }
 
 function four() {
-    if (sound) {
-        sound4.play();
-    }
-    sound = true;
-    btnBlue.style.backgroundColor = "#66AFF8"; // Soft blue
+  if (sound) {
+    sound4.play();
+  }
+  sound = true;
+  btnBlue.style.backgroundColor = "#66AFF8"; // Soft blue
 }
 
 // FUNCTION - COLOR STATES
 function clearColor() {
-    // buttons original state
-    btnGreen.style.backgroundColor = "#00DB78"; // Pure (or mostly pure) cyan - lime green.
-    btnRed.style.backgroundColor = "#D33131"; // Strong red
-    btnYellow.style.backgroundColor = "#F7BF18"; // Vivid orange
-    btnBlue.style.backgroundColor = "#1D89F4"; // Vivid blue
+  // buttons original state
+  btnGreen.style.backgroundColor = "#00DB78"; // Pure (or mostly pure) cyan - lime green.
+  btnRed.style.backgroundColor = "#D33131"; // Strong red
+  btnYellow.style.backgroundColor = "#F7BF18"; // Vivid orange
+  btnBlue.style.backgroundColor = "#1D89F4"; // Vivid blue
 }
 
 function illumColor() {
-    // buttons illuminated state
-    btnGreen.style.backgroundColor = "#29FF9E"; // vivid cyan - lime green
-    btnRed.style.backgroundColor = "#E07070"; // soft red
-    btnYellow.style.backgroundColor = "#FAD362"; // soft orange
-    btnBlue.style.backgroundColor = "#66AFF8"; // soft blue
+  // buttons illuminated state
+  btnGreen.style.backgroundColor = "#29FF9E"; // vivid cyan - lime green
+  btnRed.style.backgroundColor = "#E07070"; // soft red
+  btnYellow.style.backgroundColor = "#FAD362"; // soft orange
+  btnBlue.style.backgroundColor = "#66AFF8"; // soft blue
 }
 
 // FUNCTION - PLAYER SEQUENCE CHOICE VERIFICATION
 function check() {
-    if (
-        playersequence[playersequence.length - 1] !==
-        sequence[playersequence.length - 1]
-    )
-        success = false; // if playersequence does not equal players last selection then player is incorrect
+  if (
+    playersequence[playersequence.length - 1] !==
+    sequence[playersequence.length - 1]
+  )
+    success = false; // if playersequence does not equal players last selection then player is incorrect
 
-    if (playersequence.length == 10 && success) { // if player sequence equals cpu given sequence of '10' player wins game
-        setTimeout(() => {
-            sound10.play();
-        }, 400); // 400 millisencond interval before sound plays
-        playerWin();
-    }
+  if (playersequence.length == 10 && success) {
+    // if player sequence equals cpu given sequence of '10' player wins game
+    setTimeout(() => {
+      sound10.play();
+    }, 400); // 400 millisencond interval before sound plays
+    playerWin();
+  }
 
-    if (success == false) {
-        illumColor(); // button color in illuminated state
-        scoreTracker.textContent = "'Invalid input, please try again'"; // displays text within semi colons is user makes mistake
-        sound8.play();
-        setTimeout(() => {
-            scoreTracker.textContent = attempt;
-            clearColor(); // button color in neutral state
+  if (success == false) {
+    illumColor(); // button color in illuminated state
+    scoreTracker.textContent = "'Invalid input, please try again'"; // displays text within semi colons is user makes mistake
+    sound8.play();
+    setTimeout(() => {
+      scoreTracker.textContent = attempt;
+      clearColor(); // button color in neutral state
 
-            if (strict) {
-                reset(); // restarts game if user makes a mistake
-            } else {
-                success = true;
-                sharedVariables();
-            }
-        }, 800);
-
-        sound = false;
-    }
-
-    if (attempt == playersequence.length && success && !win) {
-        // if user light & button choice aligns with that of cpu user moves onto next round
-        attempt++;
-
-        setTimeout(() => {
-            sound7.play();
-        }, 400);
+      if (strict) {
+        reset(); // restarts game if user makes a mistake
+      } else {
+        success = true;
         sharedVariables();
-    }
+      }
+    }, 800);
+
+    sound = false;
+  }
+
+  if (attempt == playersequence.length && success && !win) {
+    // if user light & button choice aligns with that of cpu user moves onto next round
+    attempt++;
+
+    setTimeout(() => {
+      sound7.play();
+    }, 400);
+    sharedVariables();
+  }
 }
 
 // FUNCTION - SHARED VARIABLES
-function sharedVariables() { // applied to multiple functions
-    playersequence = [];
-    cpuTry = true;
-    light = 0;
-    scoreTracker.textContent = attempt;
-    intervalId = setInterval(gameAttempt, 800);
+function sharedVariables() {
+  // applied to multiple functions
+  playersequence = [];
+  cpuTry = true;
+  light = 0;
+  scoreTracker.textContent = attempt;
+  intervalId = setInterval(gameAttempt, 800);
 }
 
 // FUNCTION - PLAYER WIN GAME TRIGGER
 function playerWin() {
-    illumColor();
-    scoreTracker.textContent = "'Congratulations! You have won'"; // message displayed if user completes all sequences
-    on = false; // game stops
-    win = true;
+  illumColor();
+  scoreTracker.textContent = "'Congratulations! You have won'"; // message displayed if user completes all sequences
+  on = false; // game stops
+  win = true;
 }
