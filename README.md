@@ -46,13 +46,13 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - Please note, with the exception of a slight difference in page/scale responsiveness, desktop applies the same UI.
 
-<img src="assets/img/SimonGame1.gif" width="300">
+<img src="assets/img/simonGAME1.gif" width="300">
 
 #### Mobile Display
 
 - This image animation represents the typical UI across most modern mobile devices.
 
-<img src="assets/img/SimonGame2.gif" width="300">
+<img src="assets/img/simonGAME2.gif" width="300">
 
 #### Additional Note
 
