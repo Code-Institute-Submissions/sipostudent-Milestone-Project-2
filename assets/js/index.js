@@ -226,7 +226,7 @@ function check() {
 
   if (success == false) {
     illumColor(); // button color in illuminated state
-    scoreTracker.textContent = "'Invalid input, please try again'"; // displays text within semi colons is user makes mistake
+    scoreTracker.textContent = "'Invalid Input Entered'"; // displays text within semi colons is user makes mistake
     sound8.play();
     setTimeout(() => {
       scoreTracker.textContent = attempt;
@@ -267,7 +267,7 @@ function sharedVariables() {
 // FUNCTION - PLAYER WIN GAME TRIGGER
 function playerWin() {
   illumColor();
-  scoreTracker.textContent = "'Congratulations! You have won'"; // message displayed if user completes all sequences
+  scoreTracker.textContent = "'Congratulations! You Win'"; // message displayed if user completes all sequences
   on = false; // game stops
   win = true;
 }
