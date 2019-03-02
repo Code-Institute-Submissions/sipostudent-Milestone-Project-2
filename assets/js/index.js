@@ -11,19 +11,19 @@ let sound = true; // sound activity monitor/starts true to represent sounds acti
 let on = false; // game activation monitor/starts false to signify deactivated
 let win; // will say if user has won the game
 
-// VARIABLES - DOM QUERIES
-let sound1 = document.getElementById("sound1"); // btnGreen Sound
-let sound2 = document.getElementById("sound2"); // btnRed Sound
-let sound3 = document.getElementById("sound3"); // btnYellow Sound
-let sound4 = document.getElementById("sound4"); // btnBlue Sound
-let sound5 = document.getElementById("sound5"); // SoundOn
-let sound6 = document.getElementById("sound6"); // SoundOff
-let sound7 = document.getElementById("sound7"); // soundCorrect
-let sound8 = document.getElementById("sound8"); // soundIncorrect
-let sound9 = document.getElementById("sound9"); // soundHalfwaypoint
-let sound10 = document.getElementById("sound10"); // soundWingame
+let sound1 = new Audio("assets/sounds/btnGreen.mp3"); // btnGreen Sound
+let sound2 = new Audio("assets/sounds/btnRed.mp3"); // btnRed Sound
+let sound3 = new Audio("assets/sounds/btnYellow.mp3"); // btnYellow Sound
+let sound4 = new Audio("assets/sounds/btnBlue.mp3"); // btnBlue Sound
+let sound5 = new Audio("assets/sounds/soundOn.mp3"); // SoundOn
+let sound6 = new Audio("assets/sounds/soundOff.mp3"); // SoundOff
+let sound7 = new Audio("assets/sounds/soundCorrect.mp3"); // soundCorrect
+let sound8 = new Audio("assets/sounds/soundIncorrect.mp3"); // soundIncorrect
+let sound9 = new Audio("assets/sounds/soundHalfwaypoint.mp3"); // soundHalfwaypoint
+let sound10 = new Audio("assets/sounds/soundWingame.mp3"); // soundWingame
 
-// VARIABLES - CONSTANTS
+// VARIABLES - DOM QUERIES
+const btnGame = document.querySelectorAll(".btnGame");
 const scoreTracker = document.querySelector("#attempt"); // non-interactive Element
 
 const btnGreen = document.getElementById("btnGreen"); // interactive Element
@@ -56,65 +56,48 @@ btnStart.addEventListener("click", event => {
   }
 });
 
-btnStrict.addEventListener("change", event => {
-  if (btnStrict.checked == true) {
-    strict = true;
-  } else {
-    strict = false;
+btnStrict.addEventListener(
+  "change",
+  () => (strict = btnStrict.checked ? true : false)
+);
+
+window.addEventListener("keyup", event => {
+  let key = parseInt(event.keyCode);
+  let keyArray = [[80, 1], [76, 2], [65, 3], [89, 4]];
+  console.log(key);
+  for (let k in keyArray) {
+    if (keyArray[k][0] == key) {
+      addSequence(keyArray[k][1]);
+      break;
+    }
   }
 });
 
-btnGreen.addEventListener("click", event => {
+window.addEventListener("click", event => console.log(event.target));
+
+btnGame.forEach(btn =>
+  btn.addEventListener("click", event => {
+    console.log(event);
+    // extract value from either div or parent div
+    let value = parseInt(event.target.dataset.value);
+    if (isNaN(value)) value = parseInt(event.target.parentNode.dataset.value);
+
+    addSequence(value);
+  })
+);
+
+function addSequence(value) {
   if (on) {
-    playersequence.push(1);
+    playersequence.push(value);
     check();
-    one();
+    buttonEffect(value);
     if (!win) {
       setTimeout(() => {
         clearColor();
       }, 300);
     }
   }
-});
-
-btnRed.addEventListener("click", event => {
-  if (on) {
-    playersequence.push(2);
-    check();
-    two();
-    if (!win) {
-      setTimeout(() => {
-        clearColor();
-      }, 300);
-    }
-  }
-});
-
-btnYellow.addEventListener("click", event => {
-  if (on) {
-    playersequence.push(3);
-    check();
-    three();
-    if (!win) {
-      setTimeout(() => {
-        clearColor();
-      }, 300);
-    }
-  }
-});
-
-btnBlue.addEventListener("click", event => {
-  if (on) {
-    playersequence.push(4);
-    check();
-    four();
-    if (!win) {
-      setTimeout(() => {
-        clearColor();
-      }, 300);
-    }
-  }
-});
+}
 
 // FUNCTIONS - LOOP SEQUENCE
 function reset() {
@@ -149,46 +132,36 @@ function gameAttempt() {
   if (cpuTry) {
     clearColor();
     setTimeout(() => {
-      if (sequence[light] == 1) one(); // if first item in random light sequence array is '1' then the 'one' function will run
-      if (sequence[light] == 2) two();
-      if (sequence[light] == 3) three();
-      if (sequence[light] == 4) four();
+      buttonEffect(sequence[light]); // if first item in random light sequence array is '1' then the 'one' function will run
       light++;
     }, 200); // a duration of 200 milliseconds between each 800 millisecond setInterval
   }
 }
 
-// FUNCTIONS - SOUND & BUTTON COLOR TRIGGERS
-function one() {
+function buttonEffect(value) {
   if (sound) {
-    sound1.play(); // when the 'one' function runs 'sound1' will play and btnGreen color will be triggered
+    switch (value) {
+      case 1:
+        sound1.play();
+        btnGreen.style.backgroundColor = "#29FF9E"; // Vivid cyan - lime green.
+        break;
+      case 2:
+        sound2.play();
+        btnRed.style.backgroundColor = "#E07070"; // Soft red
+        break;
+      case 3:
+        sound3.play();
+        btnYellow.style.backgroundColor = "#FAD362"; // Soft orange
+        break;
+      case 4:
+        sound4.play();
+        btnBlue.style.backgroundColor = "#66AFF8"; // Soft blue
+        break;
+      default:
+        return false;
+    }
   }
   sound = true;
-  btnGreen.style.backgroundColor = "#29FF9E"; // Vivid cyan - lime green.
-}
-
-function two() {
-  if (sound) {
-    sound2.play();
-  }
-  sound = true;
-  btnRed.style.backgroundColor = "#E07070"; // Soft red
-}
-
-function three() {
-  if (sound) {
-    sound3.play();
-  }
-  sound = true;
-  btnYellow.style.backgroundColor = "#FAD362"; // Soft orange
-}
-
-function four() {
-  if (sound) {
-    sound4.play();
-  }
-  sound = true;
-  btnBlue.style.backgroundColor = "#66AFF8"; // Soft blue
 }
 
 // FUNCTION - COLOR STATES
