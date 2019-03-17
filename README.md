@@ -46,13 +46,13 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - Please note, with the exception of a slight difference in page/scale responsiveness, desktop applies the same UI.
 
-<img src="assets/img/simonGAME1.gif" width="300">
+<img src="assets/img/webp.net-gifmaker (1).gif" width="300">
 
 #### Mobile Display
 
 - This image animation represents the typical UI across most modern mobile devices.
 
-<img src="assets/img/simonGAME2.gif" width="300">
+<img src="assets/img/webp.net-gifmaker.gif" width="300">
 
 #### Additional Note
 
@@ -64,7 +64,7 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - Deluminate Colors
 
-  - > #00DB78 color description: Pure (or mostly pure) cyan - lime green.
+  - ![#00DB78] color description: Pure (or mostly pure) cyan - lime green.
   - > #D33131 color description: Strong red.
   - > #F7BF18 color description: Vivid orange.
   - > #1D89F4 color description: Vivid blue.
@@ -242,21 +242,22 @@ Because the website utilises a 'single page’ design, all code or content is co
 
 - Animated icons, text, and gradient background – for transitions to connect between two visual states.
 
-- - Game Tempo – should speed up incrementally, perhaps on the 5th, 9th and then if the game is set to a winning completion number of 20 as opposed to the current number of 10, then perhaps another speed increase on the 13th step, all subject to change pre-implementation.
-
-- Facebook Login – which would allow the storing of user details.
-
-- Leaderboard - which would allow the storing of user identity details (name) and high scores.
-
-- Animated icons, text, and gradient background – for transitions to connect between two visual states.
-
 - Pause function - so the game can be paused at any stage. This would also allow for the use of the onboard but currently not assigned 'sound9' musical jingle which was designed to signify a player reaching the 'halfway point' of the game. The game would need to pause, so not to clash with the playtime of the audio piece, but then resume it's randomised cycle of synchronised light & sound patterns once the music had ended. A text message which scrolled across the score tracker display in any direction could also be added to signify this milestone, perhaps animated for added user experience.
 
 ## Testing
 
 #### Key Points
 
-N/A
+Tools and Methods Used for Testing:
+
+- HTML
+  - Freeformatter.com https://www.freeformatter.com/
+- CSS
+  - Freeformatter.com https://www.freeformatter.com/
+- JavaScript
+
+  - JS Hint https://jshint.com/
+  - JS Lint https://www.jslint.com/
 
 #### Additional Points
 
@@ -314,9 +315,24 @@ N/A
 
 - Checked margins and padding of the container (sections) to ensure the content within it did not look disproportionate on various screen sizes, specifically smaller devices.
 
-#### Tested Sections (JavaScript)
+#### Tested Sections (JavaScript Using The Jasmine Framework)
 
-- N/A
+- To run tests performed by Jasmine, go into the folder entitled ‘Jasmine’ and view the file called ‘indexJasmine.html’ inside of a web browser.
+
+- Testing user interface was performed via playing the game numerous times.
+  Power and Strict checkboxes were clicked to guarantee that they worked accurately.
+
+  - Start/Reset checkbox was pressed to guarantee that it worked accurately, both starting and resetting the game score.
+
+  - I checked the featured buttons against the gameplay sequence in the browser developer console to guarantee that the right buttons illuminated.
+
+  - I checked the score as I played to guarantee that it expanded by one point for each correct round selection.
+
+  - I played the game numerous times to guarantee that all audio bites were triggered, and that alpha/numeric notifications, such as score, wrong button selection choice, and game win notification alerts showed conclusively at all times.
+
+  - I made intentional blunders in strict mode to guarantee that the mistake tone played, the right notification message appeared, and the score reset after recommencing gameplay.
+
+  - I made conscious mistakes in normal mode to guarantee that the blunder tone played, the right message notification appeared, and the game sequences resumed shortly afterward and kept on working effectively.
 
 ## Deployment
 
