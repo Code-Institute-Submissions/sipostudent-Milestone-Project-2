@@ -1,6 +1,6 @@
 # SIMON – Memory Game
 
-# Table of contents
+## Table of contents
 
 <!--ts-->
 
