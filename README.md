@@ -103,17 +103,17 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - Deluminate Colors
 
-  - ![#00DB78] color description: Pure (or mostly pure) cyan - lime green.
-  - > #D33131 color description: Strong red.
-  - > #F7BF18 color description: Vivid orange.
-  - > #1D89F4 color description: Vivid blue.
+- ![#00db78](https://placehold.it/15/00db78/000000?text=+) `#00db78` color description: Pure (or mostly pure) cyan - lime green.
+- ![#D33131](https://placehold.it/15/D33131/000000?text=+) `#D33131` color description: Strong red.
+- ![#F7BF18](https://placehold.it/15/F7BF18/000000?text=+) `#F7BF18` color description: Vivid orange.
+- ![#1D89F4](https://placehold.it/15/1D89F4/000000?text=+) `#1D89F4` color description: Vivid blue.
 
 - Illuminate Colors
 
-  - > #29FF9E color description: Vivid cyan - lime green.
-  - > #E07070 color description: Soft red.
-  - > #FAD362 color description: Soft orange.
-  - > #66AFF8 color description: Soft blue.
+- ![#29FF9E](https://placehold.it/15/29FF9E/000000?text=+) `#29FF9E` color description: Vivid cyan - lime green.
+- ![#E07070](https://placehold.it/15/E07070/000000?text=+) `#E07070` color description: Soft red.
+- ![#FAD362](https://placehold.it/15/FAD362/000000?text=+) `#FAD362` color description: Soft orange.
+- ![#66AFF8](https://placehold.it/15/66AFF8/000000?text=+) `#66AFF8` color description: Soft blue.
 
 A color encyclopaedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching color palettes.
 
@@ -153,16 +153,16 @@ The physical retail Simon (game) product has sound in addition to lighted button
 - Game Sounds
 
 
-    - > btnGreen sound description: A major
-    - > btnRed sound description: D major
-    - > btnYellow sound description: G major
-    - > btnBlue sound description: E major
-    - > soundOn sound description: A sus4
-    - > soundOff sound description: D M7
-    - > soundCorrect sound description: D M7
-    - > soundIncorrect sound description: A Dim
-    - > winGame sound description: A sus4
-    - > halfWaypoint sound description: B minor (this was not utilised)
+    - btnGreen sound description: A major
+    - btnRed sound description: D major
+    - btnYellow sound description: G major
+    - btnBlue sound description: E major
+    - soundOn sound description: A sus4
+    - soundOff sound description: D M7
+    - soundCorrect sound description: D M7
+    - soundIncorrect sound description: A Dim
+    - winGame sound description: A sus4
+    - halfWaypoint sound description: B minor (this was not utilised)
 
 - Individual Variable/DOM queries were for each sound, example, “sound1.”
 
