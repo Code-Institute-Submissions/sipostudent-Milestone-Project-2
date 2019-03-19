@@ -117,6 +117,8 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 A color encyclopaedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching color palettes.
 
+A a placeholder image service provided by [Placeholder.com](https://placeholder.com/#How_To_Use_Our_Placeholders "Placeholder.com Official Site") was used to provide a list of colours for reference in the README file.
+
 Opacity/Transparency – property to add transparency to the background of an element
 
 - Navigation-bar
