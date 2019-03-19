@@ -22,11 +22,11 @@
   - [Languages-Frameworks-Tools](#tests)
   - [Other-Resources](#Other-Resources)
 - [Features](#Features)
-  - [Seperate-Functions](#Seperate-Functions)
+  - [Separate-Functions](#Separate-Functions)
   - [Features-Left-to-Implement](#Features-Left-to-Implement)
 - [Testing](#Testing)
   - [Key-Points](#Key-Points)
-  - [Additonal-Points](#Additional-Points)
+  - [Additional-Points](#Additional-Points)
   - [Tested-Sections-1-HTML-CSS](#Tested-Sections-1-HTML-CSS)
   - [Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework](#Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework)
 - [Deployment](#Deployment)
@@ -34,72 +34,72 @@
   - [Result](#Result)
 - [Credits](#Credits)
   - [Content](#Content)
-  - [Acknowledgements](#Acknowledgements)
+  - [Acknowledgments](#Acknowledgments)
     <!--te-->
 
 ## About
 
 Milestone Project Two / Interactive Frontend Development / Code Institute
 
-This is a simple single-player memory game inspired by SIMON, an electronic game of memory skill. The purpose of the game is to replicate a continually growing sequence of signals which in this rendition is displayed via a synchronised combination of musical tones and animated buttons. To find out more about the SIMON memory game, please see this brief [video](https://www.youtube.com/watch?v=1Yqj76Q4jJ4 "about SIMON") and [Wikipedia](<https://en.wikipedia.org/wiki/Simon_(game)> "more about SIMON") entry for both rules and history of the original.
+A simple single-player memory game inspired by SIMON, an electronic game of memory skill. The purpose of the game is to replicate a continually growing sequence of signals which in this rendition displays via a synchronised combination of musical tones and animated buttons. To find out more about the SIMON memory game, please see this brief [video](https://www.youtube.com/watch?v=1Yqj76Q4jJ4 "about SIMON") and [Wikipedia](<https://en.wikipedia.org/wiki/Simon_(game)> "more about SIMON") entry for both rules and history of the original.
 
 #### Goal
 
-Reproduce a simple single-player memory game, suitable for website usage, and inspired by SIMON, a classic memory game which was popular in the 1980s. The core focus of this project is on functional game logic and to be created with JavaScript.
+Reproduce a simple single-player memory game, suitable for website usage, and inspired by SIMON, a classic memory game which was popular in the 1980s. The core focus of this project is on functional game logic created with JavaScript.
 
 #### Functionality
 
-- A random series of synchronised lights & buttons are presented to the user.
+- A random series of synchronised lights & buttons get presented to the user.
 
-- The user is required to input a sequence of synchronised lights & buttons correctly. In addition, upon valid input by the user, the same sequence of synchronised lights & buttons is replayed but with an additional step.
+- The user is required to input a sequence of synchronised lights & buttons correctly. Additonally, upon valid input by the user, the same series of synchronised lights & buttons is replayed but with an additional step.
 
 - Users will hear a sound that corresponds to an individual button whenever a pattern of synchronised lights & buttons plays.
 
-- If a user inputs the wrong pattern field, they are notified by a specific sound accompanied text message which appears in the 'score tracker' display, after which point the series of synchronised lights & buttons will play again to remind the user the sequence so they may try again.
+- If a user inputs the wrong pattern field, a notification by a specific sound accompanied text message which appears in the 'score tracker' display, after which point the series of synchronised lights & buttons will play again to remind the user the sequence so they may try again.
 
 - The user can see how many steps are in the current sequence of synchronised lights & buttons to be selected.
 
-- If a user wants to restart the game, they can select a button which grants this action; thus, returning the application back to a single step.
+- If a user wants to restart the game, they can select a button which grants this action; thus, returning the application (app) to a single step.
 
-- The user has the option of playing in both 'Strict' mode which restarts the game whenever an incorrect field is chosen or 'Normal' mode which only repeats the pattern subsequent of the wrong button being pressed.
+- The user has the option of playing in both 'Strict' mode which restarts the game whenever an incorrect field gets chosen or 'Normal' mode which only repeats the pattern subsequent of the wrong button getting pressed.
 
-- The user can win the game by achieving a total of 10 correct steps, after which point the game application will salute them with a congratulations message in acknowledgement of their triumph and ends.
+- The user can win the game by achieving a total of 10 correct steps, after which point the game app will salute them with a congratulations message in acknowledgement of their triumph and ends.
 
 #### Initiation
 
-- Research to understand what applications of similar scope were already doing in terms of functionality which provided me with a list of what I consider to be feasible options for functionality implementations to acknowledge and consider pre-production.
+- Research to understand what apps of similar scope were already doing in terms of functionality which provided me with a list of what I consider to be feasible options for functionality implementations to acknowledge and consider pre-production.
 
 ## UX
 
 #### Layout
 
-- In my opinion, Single Page Applications (SPA) are better for making responsive websites, supporting mobile devices, tablet & Desktop. Furthermore, game applications seem to demand this option as the user's attention is required to be focused on interactive events and self-triggering actions; thus, an alternative option to SPA seems counterproductive.
+- In my opinion, Single Page apps (SPA) are better for making responsive websites, supporting mobile devices, tablet & Desktop. Furthermore, game apps seem to demand this option as the user's attention is required to focus on interactive events and self-triggering actions; thus, an alternative option to SPA seems counterproductive.
 
 - No extra queries are required to the server to download pages; which consequently makes the website load faster.
 
 - By opting for a SPA, better user-friendliness can be provided via a simple linear experience, with a clear beginning, middle, and end.
 
-- From research looking into applications which are similar in scope to that of the project requirement, I noticed that many adopted a circular user interface (UI) style similar to that of the [original Simon (game) product](<https://en.wikipedia.org/wiki/Simon_(game)> "Demonstration: Simon game project") of allowing a user to interact, they generally had little to no page/scale responsiveness and poor rendering. In my opinion, which is subjective, of course, I feel that the design structure used for the original real-world physical Simon game product diminishes the user experience when applied to a website format. For a quick look at the UI which has been developed for the purpose of this project, please refer to the image animations below. Alternatively, you can access a live demonstration of the Simon game project application by clicking [here](https://sipostudent.github.io/Milestone-Project-2/ "Demonstration: Simon game project").
+- From research looking into apps which are similar in scope to that of the project requirement, I noticed that many adopted a circular user interface (UI) style alike to that of the [original Simon (game) product](<https://en.wikipedia.org/wiki/Simon_(game)> "Demonstration: Simon game project") of allowing a user to interact, they generally had little to no page/scale responsiveness and poor rendering. In my opinion, which is subjective, of course, I feel that the design structure used for the original real-world physical Simon game product diminishes the user experience when applied to a website format. For a quick look at the UI developed for this project, please refer to the image animations below. Alternatively, you can access a live demonstration of the Simon game project app by clicking [here](https://sipostudent.github.io/Milestone-Project-2/ "Demonstration: Simon game project").
 
 #### Tablet-Display
 
-- Please note, with the exception of a slight difference in page/scale responsiveness, desktop applies the same UI.
+- Please note, except a slight difference in page/scale responsiveness, desktop applies the same UI.
 
 <img src="assets/img/simonGame2.gif" width="300">
 
 #### Mobile-Display
 
-- This image animation represents the typical UI across most modern mobile devices.
+- This image animation represents the standard UI across most modern mobile devices.
 
 <img src="assets/img/simonGame1.gif" width="300">
 
 #### Additional-Note
 
-- Games generally require the user's to interact on a consistent basis; thus, the application is designed in a way that keeps things dense as opposed to thinly dispersed or scattered across multiple separate pages.
+- Games generally require the user's to interact consistently; thus, the developed app is in a way that keeps things dense as opposed to thinly dispersed or scattered across multiple separate pages.
 
 #### Colour-Scheme
 
-- In the original Simon (game) colours differentiated the four wide plastic arcs on the face of the device, which consisted of blue, yellow, red, and green; thus, in order to add some originality while not straying too far away from the original color scheme, a set of related colors has been utilised as an inspirational alternative to the original color choice. This entailed the following:
+- In the original Simon (game) colours differentiated the four wide plastic arcs on the face of the device, which consisted of blue, yellow, red, and green. To add some originality, a set of related colors has been utilised as an inspirational alternative to the original color choice which entails the following:
 
 - Deluminate Colors
 
@@ -115,9 +115,9 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 - ![#FAD362](https://placehold.it/15/FAD362/000000?text=+) `#FAD362` color description: Soft orange.
 - ![#66AFF8](https://placehold.it/15/66AFF8/000000?text=+) `#66AFF8` color description: Soft blue.
 
-A color encyclopaedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching color palettes.
+A color encyclopedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching color palettes.
 
-A a placeholder image service provided by [Placeholder.com](https://placeholder.com/#How_To_Use_Our_Placeholders "Placeholder.com Official Site") was used to provide a list of colours for reference in the README file.
+A placeholder image service provided by [Placeholder.com](https://placeholder.com/#How_To_Use_Our_Placeholders "Placeholder.com Official Site") was used to provide a list of colours for reference in the README file.
 
 Opacity/Transparency – property to add transparency to the background of an element
 
@@ -138,19 +138,19 @@ Hover-CSS – to display pseudo-class matches when the user interacts with an el
 
 #### Font
 
-- Being as the website is based on a digital application a square geometric sans-serif typeface choice has been used; thus, helping to emphasise a robotic tone to the displayed text content; a subjective opinion, of course.
+- Being as the website is based off a digital app a square geometric sans-serif typeface choice was selected; thus, helping to emphasise a robotic tone to the displayed text content; a subjective opinion, of course.
 
 #### Navigation
 
 - Fixed navigation makes it easier for users to browse the website and increase retention: In some ways, it's a passive call to action; always visible, always available. As a frequent website user, I get tired of scrolling vertically and feel the need to change. People like things which save them complication and time. So, by consistently maintaining a browser bar or menu anchored while users are scrolling avoids them having to scroll up to get to the bar when they want to browse other environments, sections, content and so on.
 
-- Maintaining the logo visible increases the brand value: Today there are an enormous number of applications, many with identical or similar features, so I feel that it’s vital to make a good impact on users and retain their interest, which can be all linked to a good brand image which in this case already exists due to the long-running popularity of the Simon (game) which this project is based.
+- Maintaining the logo visible increases brand value. Today there is an enormous number of apps, many with identical or similar features, so I feel that it’s vital to make a good impact on users and retain their interest, which can be all linked to a good brand image. In this case, a solid brand reputation already exists due to the long-running popularity of the Simon (game) which this project is based.
 
-- By having a fixed navigation with an active hover which status highlights according to what section the user is currently positioned, it makes it less likely that users will get lost and instead know where they are at all times. PLEASE NOTE: In this case, this feature is somewhat non-applicable as all application content is based on a single page, and the navigation links divert users to external websites.
+- By having fixed navigation with an active hover which status highlights according to the user's position of any particular section, it makes it less likely that users will get lost and instead know where they are at all times. PLEASE NOTE: In this case, this feature is somewhat non-applicable as all app content is based off a single page, and the navigation links divert users to external websites.
 
 #### Audio-Content
 
-The physical retail Simon (game) product has sound in addition to lighted buttons. So, for this project, a home synthesiser was used to record sounds which replicated the keys of the original game audio but utilised different sound timbres. In addition, original music jingles were created and placed to trigger at specific points in the game, either for both notification and increased user experience. These consisted of the following:
+The physical retail Simon (game) product has sound in addition to lighted buttons. So, for this project, a home synthesiser was used to record sounds which replicated the keys of the original game audio but utilised different sound timbres. Also, original music jingles were created and placed to trigger at specific points in the game, either for both notification and increased user experience. These consisted of the following:
 
 - Game Sounds
 
@@ -166,7 +166,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
     - winGame sound description: A sus4
     - halfWaypoint sound description: B minor (this was not utilised)
 
-- Individual Variable/DOM queries were for each sound, example, “sound1.”
+- Individual Variable/DOM queries were set for each sound, for example, “sound1.”
 
 - assets/sounds folder contains all of the mp3 audio files.
 
@@ -178,7 +178,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
 - [HTML5](https://www.w3.org/TR/html5/ "HTML5 Official Site")
 
-  - Semantic markup language as the shell of the site.
+  - Semantic markup language utilised as the shell of the site.
 
 - [CSS3](https://www.w3.org/Style/CSS/ "Cascading Style Sheets Official Site")
 
@@ -192,12 +192,12 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
   - Metrics
 
-    - Function with the largest signature takes 1 argument, while the median is 0.
-    - The largest function has 14 statements in it, while the median is 4.
+    - Function with the most significant signature takes 1 argument, while the median is 0.
+    - The most significant function has 14 statements in it, while the median is 4.
     - The most complex function has a cyclomatic complexity value of 5 while the median is 2.
 
   - One unused variable
-    - sound9 on line 23/index.js
+    - sound9 located at line 23/index.js
 
 - [Bootstrap - v4.1.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/ "Bootstrap Official Site")
 
@@ -205,11 +205,11 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
 - [Google Fonts](https://fonts.google.com/ "Google Fonts Official Site")
 
-  - Saira font was applied across the entire website
+  - Saira font applied across the entire website
 
 - [Font Awesome - v5.0.13](https://fontawesome.com/ "Fontawesome Official Site")
 
-  - This was used for sourcing all utilised icons
+  - Source for all utilised icons
 
 #### Other-Resources
 
@@ -220,19 +220,19 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
 ## Features
 
-#### Seperate-Functions
+#### Separate-Functions
 
-Because the website utilises a 'single page’ design, all code or content is contained within just one document (index.html).
+Because the website uses a 'single page’ design, the encapsulation of all code or content is within just one document (index.html) was adequate.
 
-- Bootstrap navigation bar/header – allows users to navigate to external websites. These consist of Wikipedia for Simon (game) history, Hasbro where users can purchase the original game, optional, of course, and the GitHub repository of the author/developer which contains the complete source code for the application; all assets included.
+- Bootstrap navigation bar/header – allows users to navigate to external websites. These consist of Wikipedia for Simon (game) history, Hasbro where users can purchase the original game, optional, of course, and the GitHub repository of the author/developer which contains the complete source code for the app; all assets included.
 
-- HTML hyper Links – which refers to data that the user can directly follow either by clicking and which point to a whole document or to a specific element within a document. These can be found by clicking the specific text, such as that in the navigation bar, or clicking on specific icons (Fontawesome) like those in the events and home section of the website.
+- HTML hyper Links – which refers to data that the user can directly follow either by clicking and which point to a whole document or a specific element within a document. These can be found by clicking the particular text, such as that in the navigation bar, or clicking on precise icons (Fontawesome) like those in the events and home section of the website.
 
-- Power – A 'checkbox' allows users to toggle between having the Simon (game) application in either an activated or deactivated status. In addition, once activated, the application will remain in a standby state unless the user unticks the checkbox which prompts deactivation.
+- Power – A 'checkbox' allows users to toggle between having the Simon (game) app in either an activated or deactivated status. Also, once activated, the app will remain in a standby state unless the user unticks the checkbox which prompts deactivation.
 
 - Start/Reset – Doubles as both a game initiation and rest game score trigger.
 
-- Strict – A checkbox function which when ticked to signify 'Strict Mode' restarts the game whenever an incorrect field is chosen. When the checkbox is unticked 'Normal Mode' is active which during gameplay only repeats the pattern subsequent to the wrong button being pressed.
+- Strict – A checkbox function which when ticked to signify 'Strict Mode' restarts the game whenever an incorrect field gets chosen. When the checkbox is unticked 'Normal Mode' is active which during gameplay only repeats the pattern subsequent to the wrong button being pressed.
 
 - Game Levels – By default, the number of levels is to 10, but this can be altered to an integer of any number, there is no limitation.
 
@@ -279,15 +279,15 @@ Because the website utilises a 'single page’ design, all code or content is co
 
 #### Features-Left-to-Implement
 
-- Game Tempo – should speed up incrementally, perhaps on the 5th, 9th and then if the game is set to a winning completion number of 20 as opposed to the current number of 10, then perhaps another speed increase on the 13th step, but all subject to change pre-implementation.
+- Game Tempo – should speed up incrementally, perhaps on the 5th, 9th and then if modification of the game happened for winning completion number of 20 as opposed to the current number of 10, then perhaps another speed increase on the 13th step, but all subject to change pre-implementation.
 
-- Facebook Login – which would allow the storing of user details.
+- Facebook Login – would allow the storing of user details.
 
 - Leaderboard - which would allow the storing of user identity details (name) and high scores.
 
 - Animated icons, text, and gradient background – for transitions to connect between two visual states.
 
-- Pause function - so the game can be paused at any stage. This would also allow for the use of the onboard but currently not assigned 'sound9' musical jingle which was designed to signify a player reaching the 'halfway point' of the game. The game would need to pause, so not to clash with the playtime of the audio piece, but then resume it's randomised cycle of synchronised light & sound patterns once the music had ended. A text message which scrolled across the score tracker display in any direction could also be added to signify this milestone, perhaps animated for added user experience.
+- Pause function - so the game can be paused at any stage. Consequently, this would also allow for the use of the onboard but currently not assigned 'sound9' musical jingle which was designed to signify a player reaching the 'halfway point' of the game. The game would need to pause, so not to clash with the playtime of the audio piece, but then resume it's randomised cycle of synchronised light & sound patterns once the music had ended. A text message which scrolled across the score tracker display in any direction could also be added to signify this milestone, perhaps animated for additional user experience.
 
 ## Testing
 
@@ -306,11 +306,11 @@ Tools and Methods Used for Testing:
 
 #### Additional-Points
 
-- Both virtual and real device tests were run to test and access the functionality of the application and identify any potential errors. In addition, and although the application UI aesthetics are not a high priority requirement for this project, the application responsiveness was also tested by resizing the window with every addition of new code. Please see below a full list of devices used in the testing phase:
+- Both virtual and real device tests were run to test and access the functionality of the app and identify any potential errors. Also, and although the app UI aesthetics are not a high priority requirement for this project, the app responsiveness was also tested by resizing the window with every addition of new code. Please see below a full list of devices used in the testing phase:
 
 - Phones
 
-  - Galaxy Note 3 (simulated and real device)
+  - Galaxy Note 3 (simulation and actual device)
   - Galaxy Note 9
   - Galaxy S5
   - Galaxy S9/S9+
@@ -339,26 +339,26 @@ Tools and Methods Used for Testing:
 * Laptops
 
   - MacBook Pro (simulated and real device)
-  - Asus UX 305 (simulated and real device)
+  - Asus UX 305 (simulation and actual device)
 
 * Televisions
   - 1080p Full HD Television (simulated and real device)
 
-- Website responsiveness was also tested by resizing the window with every addition of new code.
+- Website responsiveness was also tested by resizing the window with every addition of a new code sequence.
 
 #### Tested-Sections-1-HTML-CSS
 
 - External links to third party websites and code authors GitHub repository.
 
-- Checked button sizes so they were responsive and large enough to be clicked.
+- Checked button sizes so, they were responsive and large enough to be clicked.
 
-- Ensuring individual section headers resized and appeared well when viewed on various device screens and added opacity to the navigation bar to allow for more visibility of section header area on smaller devices.
+- Ensured individual section headers resized and appeared well when viewed on various device screens and added opacity to the navigation bar to allow for more visibility of section header area on smaller devices.
 
 - Spell checked all text content.
 
 - HTML and CSS validation via [w3.org](https://www.w3.org/ "W3C Official Site").
 
-- Checked margins and padding of the container (sections) to ensure the content within it did not look disproportionate on various screen sizes, specifically smaller devices.
+- Checked margins and padding of the container (sections) to ensure the content within it did not look disproportionate on various screen sizes, individually smaller devices.
 
 #### Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework
 
@@ -383,7 +383,7 @@ Tools and Methods Used for Testing:
 
 - Used GitHub Pages to deploy the final version (https://sipostudent.github.io/Milestone-Project-2/).
 
-- All tests performed prior to deployment were redone on the deployed final version.
+- All the tests performed before deployment was processed a second time on the deployed final version.
 
 #### Identified-Issues
 
@@ -391,7 +391,7 @@ Tools and Methods Used for Testing:
 
 #### Result
 
-- I would suffice this was a successful deployment, all project requirements were met, and the game application has indeed proven to be functional, user-friendly, and aesthetically pleasing.
+- I would suffice this was a successful deployment. The achievement of all project requirements was successful, and the game application has indeed proven to be functional, user-friendly, and aesthetically pleasing.
 
 ## Credits
 
@@ -399,6 +399,6 @@ Tools and Methods Used for Testing:
 
 - All written content is bespoke and created by the code author (Sipo Charles).
 
-#### Acknowledgements
+#### Acknowledgments
 
 - I received inspiration for this project from visiting [miniclip.com](https://www.miniclip.com/games/en/ "Miniclip Official Site"), and searching Google Images for Simon (game) renditions which lead me to specific compositions, but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
