@@ -1,5 +1,44 @@
 # SIMON – Memory Game
 
+# Table of contents
+
+<!--ts-->
+
+- [Table of contents](#table-of-contents)
+- [About](#About)
+  - [Goal](#Goal)
+  - [Functionality](#Functionality)
+  - [Initiation](#Initiation)
+- [UX](#UX)
+  - [Layout](#Layout)
+  - [Tablet-Display](#Tablet-Display)
+  - [Mobile-Display](#Mobile-Display)
+  - [Additional-Note](#Additional-Note)
+  - [Colour-Scheme](#Colour-Scheme)
+  - [Font](#Font)
+  - [Navigation](#Navigation)
+  - [Audio-Content](#Audio-Content)
+- [Technologies](#Technologies)
+  - [Languages-Frameworks-Tools](#tests)
+  - [Other-Resources](#Other-Resources)
+- [Features](#Features)
+  - [Seperate-Functions](#Seperate-Functions)
+  - [Features-Left-to-Implement](#Features-Left-to-Implement)
+- [Testing](#Testing)
+  - [Key-Points](#Key-Points)
+  - [Additonal-Points](#Additional-Points)
+  - [Tested-Sections-1-HTML-CSS](#Tested-Sections-1-HTML-CSS)
+  - [Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework](#Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework)
+- [Deployment](#Deployment)
+  - [Identified-Issues](#Identified-Issues)
+  - [Result](#Result)
+- [Credits](#Credits)
+  - [Content](#Content)
+  - [Acknowledgements](#Acknowledgements)
+    <!--te-->
+
+## About
+
 Milestone Project Two / Interactive Frontend Development / Code Institute
 
 This is a simple single-player memory game inspired by SIMON, an electronic game of memory skill. The purpose of the game is to replicate a continually growing sequence of signals which in this rendition is displayed via a synchronised combination of musical tones and animated buttons. To find out more about the SIMON memory game, please see this brief [video](https://www.youtube.com/watch?v=1Yqj76Q4jJ4 "about SIMON") and [Wikipedia](<https://en.wikipedia.org/wiki/Simon_(game)> "more about SIMON") entry for both rules and history of the original.
@@ -42,23 +81,23 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - From research looking into applications which are similar in scope to that of the project requirement, I noticed that many adopted a circular user interface (UI) style similar to that of the [original Simon (game) product](<https://en.wikipedia.org/wiki/Simon_(game)> "Demonstration: Simon game project") of allowing a user to interact, they generally had little to no page/scale responsiveness and poor rendering. In my opinion, which is subjective, of course, I feel that the design structure used for the original real-world physical Simon game product diminishes the user experience when applied to a website format. For a quick look at the UI which has been developed for the purpose of this project, please refer to the image animations below. Alternatively, you can access a live demonstration of the Simon game project application by clicking [here](https://sipostudent.github.io/Milestone-Project-2/ "Demonstration: Simon game project").
 
-#### Tablet Display
+#### Tablet-Display
 
 - Please note, with the exception of a slight difference in page/scale responsiveness, desktop applies the same UI.
 
 <img src="assets/img/simonGame2.gif" width="300">
 
-#### Mobile Display
+#### Mobile-Display
 
 - This image animation represents the typical UI across most modern mobile devices.
 
 <img src="assets/img/simonGame1.gif" width="300">
 
-#### Additional Note
+#### Additional-Note
 
 - Games generally require the user's to interact on a consistent basis; thus, the application is designed in a way that keeps things dense as opposed to thinly dispersed or scattered across multiple separate pages.
 
-#### Colour Scheme
+#### Colour-Scheme
 
 - In the original Simon (game) colours differentiated the four wide plastic arcs on the face of the device, which consisted of blue, yellow, red, and green; thus, in order to add some originality while not straying too far away from the original color scheme, a set of related colors has been utilised as an inspirational alternative to the original color choice. This entailed the following:
 
@@ -107,7 +146,7 @@ Hover-CSS – to display pseudo-class matches when the user interacts with an el
 
 - By having a fixed navigation with an active hover which status highlights according to what section the user is currently positioned, it makes it less likely that users will get lost and instead know where they are at all times. PLEASE NOTE: In this case, this feature is somewhat non-applicable as all application content is based on a single page, and the navigation links divert users to external websites.
 
-#### Audio Content
+#### Audio-Content
 
 The physical retail Simon (game) product has sound in addition to lighted buttons. So, for this project, a home synthesiser was used to record sounds which replicated the keys of the original game audio but utilised different sound timbres. In addition, original music jingles were created and placed to trigger at specific points in the game, either for both notification and increased user experience. These consisted of the following:
 
@@ -132,6 +171,8 @@ The physical retail Simon (game) product has sound in addition to lighted button
 - Separate functions were created to play music keys and jingles.
 
 ## Technologies
+
+#### Languages-Frameworks-Tools
 
 - [HTML5](https://www.w3.org/TR/html5/ "HTML5 Official Site")
 
@@ -168,7 +209,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
   - This was used for sourcing all utilised icons
 
-#### Other Resources</h4>
+#### Other-Resources
 
 - https://getbootstrap.com/
 - https://www.w3schools.com/
@@ -176,6 +217,8 @@ The physical retail Simon (game) product has sound in addition to lighted button
 - https://slack.com/
 
 ## Features
+
+#### Seperate-Functions
 
 Because the website utilises a 'single page’ design, all code or content is contained within just one document (index.html).
 
@@ -232,7 +275,7 @@ Because the website utilises a 'single page’ design, all code or content is co
      - Type = Sound Stab
      - Purpose = Syncs with BtnBlue
 
-### Features Left to Implement
+#### Features-Left-to-Implement
 
 - Game Tempo – should speed up incrementally, perhaps on the 5th, 9th and then if the game is set to a winning completion number of 20 as opposed to the current number of 10, then perhaps another speed increase on the 13th step, but all subject to change pre-implementation.
 
@@ -259,7 +302,7 @@ Tools and Methods Used for Testing:
   - JS Hint https://jshint.com/
   - JS Lint https://www.jslint.com/
 
-#### Additional Points
+#### Additional-Points
 
 - Both virtual and real device tests were run to test and access the functionality of the application and identify any potential errors. In addition, and although the application UI aesthetics are not a high priority requirement for this project, the application responsiveness was also tested by resizing the window with every addition of new code. Please see below a full list of devices used in the testing phase:
 
@@ -301,7 +344,7 @@ Tools and Methods Used for Testing:
 
 - Website responsiveness was also tested by resizing the window with every addition of new code.
 
-#### Tested Sections (HTML/CSS)
+#### Tested-Sections-1-HTML-CSS
 
 - External links to third party websites and code authors GitHub repository.
 
@@ -315,7 +358,7 @@ Tools and Methods Used for Testing:
 
 - Checked margins and padding of the container (sections) to ensure the content within it did not look disproportionate on various screen sizes, specifically smaller devices.
 
-#### Tested Sections (JavaScript Using The Jasmine Framework)
+#### Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework
 
 - To run tests performed by Jasmine, go into the folder entitled ‘Jasmine’ and view the file called ‘indexJasmine.html’ inside of a web browser.
 
@@ -340,7 +383,7 @@ Tools and Methods Used for Testing:
 
 - All tests performed prior to deployment were redone on the deployed final version.
 
-#### Identified Issues
+#### Identified-Issues
 
 - N/A
 
