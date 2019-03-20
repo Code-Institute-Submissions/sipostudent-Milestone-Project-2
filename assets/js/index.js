@@ -63,7 +63,12 @@ btnStrict.addEventListener(
 
 window.addEventListener("keyup", event => {
   let key = parseInt(event.keyCode);
-  let keyArray = [[80, 1], [76, 2], [65, 3], [89, 4]];
+  let keyArray = [
+    [80, 1],
+    [76, 2],
+    [65, 3],
+    [89, 4]
+  ];
   console.log(key);
   for (let k in keyArray) {
     if (keyArray[k][0] == key) {

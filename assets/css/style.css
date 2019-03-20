@@ -5,11 +5,14 @@ body {
     letter-spacing: 0.15em;
     background-color: #222222 !important;
     font-family: 'Saira', sans-serif;
+    color: #d9d9d9;
+    background: #e8e8e8;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 /* NAVIGATION */
 .navbar {
-    border-bottom: #fff 1px solid;
+    border-bottom: 1px solid #fff;
     box-shadow: 7px 7px 10px 0px rgba(217, 217, 217, 1);
     opacity: 0.1;
 }
@@ -65,27 +68,42 @@ h3 {
 /* GAME PLAY BUTTONS */
 .bg-warning {
     background-color: #00DB78 !important;
-    border-radius: 5px;
+    border-bottom: 1px solid #19c276;
+    box-shadow: 0 2px 2px rgba(51, 168, 115);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .bg-secondary {
     background-color: #D33131 !important;
-    border-radius: 5px;
+    border-bottom: 1px solid #b64e4e;
+    box-shadow: 0 2px 2px rgba(153, 107, 107);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .bg-success {
     background-color: #F7BF18 !important;
-    border-radius: 5px;
+    border-bottom: 1px solid #dbb134;
+    box-shadow: 0 2px 2px rgba(192, 164, 79);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .bg-danger {
     background-color: #1D89F4 !important;
-    border-radius: 5px;
+    border-bottom: 1px solid #3889d9;
+    box-shadow: 0 2px 2px rgba(84, 137, 189);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn-default {
     background-color: #222222 !important;
-    border-radius: 5px;
+    border-bottom: 1px solid #2b1a1a;
+    box-shadow: 0 2px 2px rgba(51, 17, 17);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* START BUTTON TEXT */

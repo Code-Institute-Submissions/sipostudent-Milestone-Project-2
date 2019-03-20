@@ -105,9 +105,38 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 - Deluminate colours
 
 - ![#00db78](https://placehold.it/15/00db78/000000?text=+) `#00db78` colour description: Pure (or mostly pure) cyan - lime green.
+
+  - border-bottom: #19c276
+  - box-shadow: rgba(51, 168, 115)
+
 - ![#D33131](https://placehold.it/15/D33131/000000?text=+) `#D33131` colour description: Strong red.
+
+  - border-bottom: #b64e4e
+  - box-shadow: rgba(153, 107, 107)
+
 - ![#F7BF18](https://placehold.it/15/F7BF18/000000?text=+) `#F7BF18` colour description: Vivid orange.
+
+  - border-bottom: #dbb134
+  - box-shadow: rgba(192, 164, 79)
+
 - ![#1D89F4](https://placehold.it/15/1D89F4/000000?text=+) `#1D89F4` colour description: Vivid blue.
+
+  - border-bottom: #3889d9
+  - box-shadow: rgba(84, 137, 189)
+
+- ![#222222](https://placehold.it/15/222222/000000?text=+) `#222222` colour description: Very dark gray (mostly black).
+
+  - border-bottom: #2b1a1a
+  - box-shadow: rgba(51, 17, 17)
+
+- ![#fff](https://placehold.it/15/fff/000000?text=+) `#fff` colour description: White.
+
+  - text-shadow: rgba(255, 255, 255, .1)
+  - text-shadow: rgba(0, 0, 0, .5)
+
+- ![#d9d9d9](https://placehold.it/15/d9d9d9/000000?text=+) `#d9d9d9` colour description: Very light gray.
+
+- ![#e8e8e8](https://placehold.it/15/e8e8e8/000000?text=+) `#e8e8e8` colour description: Very light gray.
 
 - Illuminate colours
 
