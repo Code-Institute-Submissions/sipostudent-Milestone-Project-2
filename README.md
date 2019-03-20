@@ -26,6 +26,7 @@
   - [Features-Left-to-Implement](#Features-Left-to-Implement)
 - [Testing](#Testing)
   - [Key-Points](#Key-Points)
+  - [Tools-and-Methods-Used-for-Testing](#Tools-and-Methods-Used-for-Testing)
   - [Additional-Points](#Additional-Points)
   - [Tested-Sections-1-HTML-CSS](#Tested-Sections-1-HTML-CSS)
   - [Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework](#Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework)
@@ -34,14 +35,14 @@
   - [Result](#Result)
 - [Credits](#Credits)
   - [Content](#Content)
-  - [Acknowledgments](#Acknowledgments)
+  - [Acknowledgements](#Acknowledgements)
     <!--te-->
 
 ## About
 
 Milestone Project Two / Interactive Frontend Development / Code Institute
 
-A simple single-player memory game inspired by SIMON, an electronic game of memory skill. The purpose of the game is to replicate a continually growing sequence of signals which in this rendition displays via a synchronised combination of musical tones and animated buttons. To find out more about the SIMON memory game, please see this brief [video](https://www.youtube.com/watch?v=1Yqj76Q4jJ4 "about SIMON") and [Wikipedia](<https://en.wikipedia.org/wiki/Simon_(game)> "more about SIMON") entry for both rules and history of the original.
+This application (app) is a simple single-player memory game inspired by an electronic game of memory skill called 'Simon.' The purpose of the game is to replicate a continually growing sequence of signals which in this rendition displays via a synchronised combination of musical tones and animated buttons. To find out more about the SIMON memory game, please see this brief [video](https://www.youtube.com/watch?v=1Yqj76Q4jJ4 "about SIMON") and [Wikipedia](<https://en.wikipedia.org/wiki/Simon_(game)> "more about SIMON") entry for both rules and history of the original.
 
 #### Goal
 
@@ -49,17 +50,17 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 #### Functionality
 
-- A random series of synchronised lights & buttons get presented to the user.
+- A random series of synchronised sound & light buttons get presented to the user.
 
-- The user is required to input a sequence of synchronised lights & buttons correctly. Additonally, upon valid input by the user, the same series of synchronised lights & buttons is replayed but with an additional step.
+- The user is required to input a sequence of synchronised audio & light buttons correctly which can be done by either pressing the according button with a cursor on laptop/desktop devices, a finger/thumb on smaller devices or by pressing the an individual letter on a keyboard which corresponds to a specific illuminated synchronised audio & light button. Additionally, upon valid input by the user, the same series of synchronised sound & bright buttons is replayed but with an additional step.
 
-- Users will hear a sound that corresponds to an individual button whenever a pattern of synchronised lights & buttons plays.
+- Users will hear a sound that corresponds to an individual button whenever a pattern of synchronised audio & light controls play.
 
-- If a user inputs the wrong pattern field, a notification by a specific sound accompanied text message which appears in the 'score tracker' display, after which point the series of synchronised lights & buttons will play again to remind the user the sequence so they may try again.
+- If a user inputs the wrong pattern field, a notification by a specific sound accompanied text message which appears in the 'score tracker' display, after which point the series of synchronised audio & light buttons will play again to remind the user the sequence so they may try again.
 
-- The user can see how many steps are in the current sequence of synchronised lights & buttons to be selected.
+- The user can see how many steps are in the current sequence of synchronised audio & light buttons to be selected.
 
-- If a user wants to restart the game, they can select a button which grants this action; thus, returning the application (app) to a single step.
+- If a user wants to restart the game, they can select a button which grants this action; thus, returning the app to a single step.
 
 - The user has the option of playing in both 'Strict' mode which restarts the game whenever an incorrect field gets chosen or 'Normal' mode which only repeats the pattern subsequent of the wrong button getting pressed.
 
@@ -73,11 +74,11 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 #### Layout
 
-- In my opinion, Single Page apps (SPA) are better for making responsive websites, supporting mobile devices, tablet & Desktop. Furthermore, game apps seem to demand this option as the user's attention is required to focus on interactive events and self-triggering actions; thus, an alternative option to SPA seems counterproductive.
+- In my opinion, Single Page Apps (SPA) are better for making responsive websites, supporting mobile devices, tablet & Desktop. Furthermore, game apps seem to demand this option as the user's attention is required to focus on interactive events and self-triggering actions; thus, an alternative option to SPA seems counterproductive.
 
 - No extra queries are required to the server to download pages; which consequently makes the website load faster.
 
-- By opting for a SPA, better user-friendliness can be provided via a simple linear experience, with a clear beginning, middle, and end.
+- By opting for a SPA, better user-friendliness arises via a purely linear experience, with a clear beginning, middle, and end.
 
 - From research looking into apps which are similar in scope to that of the project requirement, I noticed that many adopted a circular user interface (UI) style alike to that of the [original Simon (game) product](<https://en.wikipedia.org/wiki/Simon_(game)> "Demonstration: Simon game project") of allowing a user to interact, they generally had little to no page/scale responsiveness and poor rendering. In my opinion, which is subjective, of course, I feel that the design structure used for the original real-world physical Simon game product diminishes the user experience when applied to a website format. For a quick look at the UI developed for this project, please refer to the image animations below. Alternatively, you can access a live demonstration of the Simon game project app by clicking [here](https://sipostudent.github.io/Milestone-Project-2/ "Demonstration: Simon game project").
 
@@ -99,23 +100,23 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 #### Colour-Scheme
 
-- In the original Simon (game) colours differentiated the four wide plastic arcs on the face of the device, which consisted of blue, yellow, red, and green. To add some originality, a set of related colors has been utilised as an inspirational alternative to the original color choice which entails the following:
+- In the original Simon (game) colours differentiated the four wide plastic arcs on the face of the device, which consisted of blue, yellow, red, and green. To add some originality, a set of related colours has been utilised as an inspirational alternative to the original colour choice which entails the following:
 
-- Deluminate Colors
+- Deluminate colours
 
-- ![#00db78](https://placehold.it/15/00db78/000000?text=+) `#00db78` color description: Pure (or mostly pure) cyan - lime green.
-- ![#D33131](https://placehold.it/15/D33131/000000?text=+) `#D33131` color description: Strong red.
-- ![#F7BF18](https://placehold.it/15/F7BF18/000000?text=+) `#F7BF18` color description: Vivid orange.
-- ![#1D89F4](https://placehold.it/15/1D89F4/000000?text=+) `#1D89F4` color description: Vivid blue.
+- ![#00db78](https://placehold.it/15/00db78/000000?text=+) `#00db78` colour description: Pure (or mostly pure) cyan - lime green.
+- ![#D33131](https://placehold.it/15/D33131/000000?text=+) `#D33131` colour description: Strong red.
+- ![#F7BF18](https://placehold.it/15/F7BF18/000000?text=+) `#F7BF18` colour description: Vivid orange.
+- ![#1D89F4](https://placehold.it/15/1D89F4/000000?text=+) `#1D89F4` colour description: Vivid blue.
 
-- Illuminate Colors
+- Illuminate colours
 
-- ![#29FF9E](https://placehold.it/15/29FF9E/000000?text=+) `#29FF9E` color description: Vivid cyan - lime green.
-- ![#E07070](https://placehold.it/15/E07070/000000?text=+) `#E07070` color description: Soft red.
-- ![#FAD362](https://placehold.it/15/FAD362/000000?text=+) `#FAD362` color description: Soft orange.
-- ![#66AFF8](https://placehold.it/15/66AFF8/000000?text=+) `#66AFF8` color description: Soft blue.
+- ![#29FF9E](https://placehold.it/15/29FF9E/000000?text=+) `#29FF9E` colour description: Vivid cyan - lime green.
+- ![#E07070](https://placehold.it/15/E07070/000000?text=+) `#E07070` colour description: Soft red.
+- ![#FAD362](https://placehold.it/15/FAD362/000000?text=+) `#FAD362` colour description: Soft orange.
+- ![#66AFF8](https://placehold.it/15/66AFF8/000000?text=+) `#66AFF8` colour description: Soft blue.
 
-A color encyclopedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching color palettes.
+A colour encyclopedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching colour palettes.
 
 A placeholder image service provided by [Placeholder.com](https://placeholder.com/#How_To_Use_Our_Placeholders "Placeholder.com Official Site") was used to provide a list of colours for reference in the README file.
 
@@ -138,7 +139,7 @@ Hover-CSS – to display pseudo-class matches when the user interacts with an el
 
 #### Font
 
-- Being as the website is based off a digital app a square geometric sans-serif typeface choice was selected; thus, helping to emphasise a robotic tone to the displayed text content; a subjective opinion, of course.
+- Being as the website modelling is off a digital app a square geometric sans-serif typeface choice was selected; thus, helping to emphasise a robotic tone to the displayed text content; a subjective opinion, of course.
 
 #### Navigation
 
@@ -164,7 +165,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
     - soundCorrect sound description: D M7
     - soundIncorrect sound description: A Dim
     - winGame sound description: A sus4
-    - halfWaypoint sound description: B minor (this was not utilised)
+    - halfWaypoint sound description: B minor (not utilised)
 
 - Individual Variable/DOM queries were set for each sound, for example, “sound1.”
 
@@ -232,9 +233,16 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 - Start/Reset – Doubles as both a game initiation and rest game score trigger.
 
-- Strict – A checkbox function which when ticked to signify 'Strict Mode' restarts the game whenever an incorrect field gets chosen. When the checkbox is unticked 'Normal Mode' is active which during gameplay only repeats the pattern subsequent to the wrong button being pressed.
+- Strict – A checkbox function which when ticked to signify 'Strict Mode' restarts the game whenever an incorrect field gets chosen. When the checkbox is unticked 'Normal Mode' is active which during gameplay only repeats the pattern in the event of the wrong button pressed.
 
-- Game Levels – By default, the number of levels is to 10, but this can be altered to an integer of any number, there is no limitation.
+- Game Levels – By default, the number of levels is to 10, although flexible to an integer of any amount, there is no limitation.
+
+- Keyboard controls for the game.
+
+  - Green - P
+  - Red - L
+  - Orange - A
+  - Blue - Y
 
 - Sound Stabs /Musical Jingles
 
@@ -291,9 +299,11 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 ## Testing
 
-#### Key Points
+#### Key-Points
 
-Tools and Methods Used for Testing:
+- N/A
+
+#### Tools-and-Methods-Used-for-Testing
 
 - HTML
   - Freeformatter.com https://www.freeformatter.com/
@@ -328,7 +338,7 @@ Tools and Methods Used for Testing:
   - Pixel 2 XL
 
 - Tablets
-  - iPad (simulated and real device)
+  - iPad (simulation and actual device)
   - iPad Mini
   - iPad Pro (10.5-inch)
   - iPad Pro (12.9-inch) (simulated and real device)
@@ -377,7 +387,7 @@ Tools and Methods Used for Testing:
 
   - I made intentional blunders in strict mode to guarantee that the mistake tone played, the right notification message appeared, and the score reset after recommencing gameplay.
 
-  - I made conscious mistakes in normal mode to guarantee that the blunder tone played, the right message notification appeared, and the game sequences resumed shortly afterward and kept on working effectively.
+  - I made conscious mistakes in normal mode to guarantee that the blunder tone played, the right message notification appeared, and the game sequences resumed shortly afterwards and kept on working effectively.
 
 ## Deployment
 
@@ -391,7 +401,7 @@ Tools and Methods Used for Testing:
 
 #### Result
 
-- I would suffice this was a successful deployment. The achievement of all project requirements was successful, and the game application has indeed proven to be functional, user-friendly, and aesthetically pleasing.
+- I would suffice this was a successful deployment. The achievement of all project requirements was successful, and the game app has indeed proven to be functional, user-friendly, and aesthetically pleasing.
 
 ## Credits
 
@@ -399,6 +409,6 @@ Tools and Methods Used for Testing:
 
 - All written content is bespoke and created by the code author (Sipo Charles).
 
-#### Acknowledgments
+#### Acknowledgements
 
 - I received inspiration for this project from visiting [miniclip.com](https://www.miniclip.com/games/en/ "Miniclip Official Site"), and searching Google Images for Simon (game) renditions which lead me to specific compositions, but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
