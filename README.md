@@ -86,13 +86,13 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - Please note, except a slight difference in page/scale responsiveness, desktop applies the same UI.
 
-<img src="assets/img/simonGame2.gif" width="300">
+<img src="assets/img/tabletSimon.gif" width="300">
 
 #### Mobile-Display
 
 - This image animation represents the standard UI across most modern mobile devices.
 
-<img src="assets/img/simonGame1.gif" width="300">
+<img src="assets/img/mobileSimon.gif" width="300">
 
 #### Additional-Note
 
@@ -104,46 +104,46 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - Deluminate colours
 
-- ![#00db78](https://placehold.it/15/00db78/000000?text=+) `#00db78` colour description: Pure (or mostly pure) cyan - lime green.
+  - ![#00db78](https://placehold.it/15/00db78/000000?text=+) `#00db78` colour description: Pure (or mostly pure) cyan - lime green.
 
-  - border-bottom: #19c276
-  - box-shadow: rgba(51, 168, 115)
+    - border-bottom: #19c276 color description : Strong cyan - lime green.
+    - box-shadow: rgba(51, 168, 115) color description : Dark moderate cyan - lime green.
 
-- ![#D33131](https://placehold.it/15/D33131/000000?text=+) `#D33131` colour description: Strong red.
+  - ![#D33131](https://placehold.it/15/D33131/000000?text=+) `#D33131` colour description: Strong red.
 
-  - border-bottom: #b64e4e
-  - box-shadow: rgba(153, 107, 107)
+    - border-bottom: #b64e4e color description : Moderate red.
+    - box-shadow: rgba(153, 107, 107) color description : Mostly desaturated dark red.
 
-- ![#F7BF18](https://placehold.it/15/F7BF18/000000?text=+) `#F7BF18` colour description: Vivid orange.
+  - ![#F7BF18](https://placehold.it/15/F7BF18/000000?text=+) `#F7BF18` colour description: Vivid orange.
 
-  - border-bottom: #dbb134
-  - box-shadow: rgba(192, 164, 79)
+    - border-bottom: #dbb134 color description : Bright orange.
+    - box-shadow: rgba(192, 164, 79) color description : Moderate yellow.
 
-- ![#1D89F4](https://placehold.it/15/1D89F4/000000?text=+) `#1D89F4` colour description: Vivid blue.
+  - ![#1D89F4](https://placehold.it/15/1D89F4/000000?text=+) `#1D89F4` colour description: Vivid blue.
 
-  - border-bottom: #3889d9
-  - box-shadow: rgba(84, 137, 189)
+    - border-bottom: #3889d9 color description : Bright blue.
+    - box-shadow: rgba(84, 137, 189) color description : Moderate blue.
 
-- ![#222222](https://placehold.it/15/222222/000000?text=+) `#222222` colour description: Very dark gray (mostly black).
+  - ![#222222](https://placehold.it/15/222222/000000?text=+) `#222222` colour description: Very dark gray (mostly black).
 
-  - border-bottom: #2b1a1a
-  - box-shadow: rgba(51, 17, 17)
+    - border-bottom: #2b1a1a color description : Very dark (mostly black) red.
+    - box-shadow: rgba(51, 17, 17) color description : Very dark red.
 
-- ![#fff](https://placehold.it/15/fff/000000?text=+) `#fff` colour description: White.
+  - ![#fff](https://placehold.it/15/fff/000000?text=+) `#fff` colour description: White.
 
-  - text-shadow: rgba(255, 255, 255, .1)
-  - text-shadow: rgba(0, 0, 0, .5)
+    - text-shadow: rgba(255, 255, 255, .1) color description : White.
+    - text-shadow: rgba(0, 0, 0, .5) color description : Black.
 
-- ![#d9d9d9](https://placehold.it/15/d9d9d9/000000?text=+) `#d9d9d9` colour description: Very light gray.
+  - ![#d9d9d9](https://placehold.it/15/d9d9d9/000000?text=+) `#d9d9d9` colour description: Very light gray.
 
-- ![#e8e8e8](https://placehold.it/15/e8e8e8/000000?text=+) `#e8e8e8` colour description: Very light gray.
+  - ![#e8e8e8](https://placehold.it/15/e8e8e8/000000?text=+) `#e8e8e8` colour description: Very light gray.
 
 - Illuminate colours
 
-- ![#29FF9E](https://placehold.it/15/29FF9E/000000?text=+) `#29FF9E` colour description: Vivid cyan - lime green.
-- ![#E07070](https://placehold.it/15/E07070/000000?text=+) `#E07070` colour description: Soft red.
-- ![#FAD362](https://placehold.it/15/FAD362/000000?text=+) `#FAD362` colour description: Soft orange.
-- ![#66AFF8](https://placehold.it/15/66AFF8/000000?text=+) `#66AFF8` colour description: Soft blue.
+  - ![#29FF9E](https://placehold.it/15/29FF9E/000000?text=+) `#29FF9E` colour description: Vivid cyan - lime green.
+  - ![#E07070](https://placehold.it/15/E07070/000000?text=+) `#E07070` colour description: Soft red.
+  - ![#FAD362](https://placehold.it/15/FAD362/000000?text=+) `#FAD362` colour description: Soft orange.
+  - ![#66AFF8](https://placehold.it/15/66AFF8/000000?text=+) `#66AFF8` colour description: Soft blue.
 
 A colour encyclopedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching colour palettes.
 
