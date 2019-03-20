@@ -52,11 +52,11 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - A random series of synchronised sound & light buttons get presented to the user.
 
-- The user is required to input a sequence of synchronised audio & light buttons correctly which can be done by either pressing the according button with a cursor on laptop/desktop devices, a finger/thumb on smaller devices or by pressing the an individual letter on a keyboard which corresponds to a specific illuminated synchronised audio & light button. Additionally, upon valid input by the user, the same series of synchronised sound & bright buttons is replayed but with an additional step.
+- The user is required to input a sequence of synchronised audio & light buttons correctly which can be done by either pressing the according button with a cursor on laptop/desktop devices, a finger/thumb on smaller devices or by pressing an individual letter on a keyboard which corresponds to a specific illuminated synchronised audio & light button. Additionally, upon valid input by the user, the same series of synchronised sound & bright buttons is replayed but with an additional step.
 
 - Users will hear a sound that corresponds to an individual button whenever a pattern of synchronised audio & light controls play.
 
-- If a user inputs the wrong pattern field, a notification by a specific sound accompanied text message which appears in the 'score tracker' display, after which point the series of synchronised audio & light buttons will play again to remind the user the sequence so they may try again.
+- If a user inputs the wrong pattern field, a notification by a specific sound accompanied with a text message will appear in the 'score tracker' display, after which point the series of synchronised audio & light buttons will play again to remind the user the of sequence so they may try again.
 
 - The user can see how many steps are in the current sequence of synchronised audio & light buttons to be selected.
 
@@ -76,7 +76,7 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - In my opinion, Single Page Apps (SPA) are better for making responsive websites, supporting mobile devices, tablet & Desktop. Furthermore, game apps seem to demand this option as the user's attention is required to focus on interactive events and self-triggering actions; thus, an alternative option to SPA seems counterproductive.
 
-- No extra queries are required to the server to download pages; which consequently makes the website load faster.
+- No extra queries are required to the server to download pages; which consequently makes the app load faster.
 
 - By opting for a SPA, better user-friendliness arises via a purely linear experience, with a clear beginning, middle, and end.
 
