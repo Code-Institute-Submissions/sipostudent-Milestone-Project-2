@@ -1,10 +1,9 @@
 # SIMON – Memory Game
 
-## Table of contents
+## Table of Contents
 
 <!--ts-->
 
-- [Table of contents](#table-of-contents)
 - [About](#About)
   - [Goal](#Goal)
   - [Functionality](#Functionality)
