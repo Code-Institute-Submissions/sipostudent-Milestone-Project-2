@@ -19,10 +19,10 @@
   - [Navigation](#Navigation)
   - [Audio-Content](#Audio-Content)
 - [Technologies](#Technologies)
-  - [Languages-Frameworks-Tools](#tests)
+  - [Languages-Frameworks-Tools](#Languages-Frameworks-Tools)
   - [Other-Resources](#Other-Resources)
 - [Features](#Features)
-  - [Separate-Functions](#Separate-Functions)
+  - [Existing-Features](#Existing-Features)
   - [Features-Left-to-Implement](#Features-Left-to-Implement)
 - [Testing](#Testing)
   - [Key-Points](#Key-Points)
@@ -250,7 +250,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
 ## Features
 
-#### Separate-Functions
+#### Existing-Features
 
 Because the website uses a 'single page’ design, the encapsulation of all code or content is within just one document (index.html) was adequate.
 
