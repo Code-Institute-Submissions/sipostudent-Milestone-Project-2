@@ -33,6 +33,7 @@
 - [Deployment](#Deployment)
   - [Application Location](#Application-Location)
   - [Cloning The Repository](#Cloning-The-Repository)
+  - [Running The Application](#Running-The-Application)
   - [Post Deployment Tests](#Post-Deployment-Tests)
   - [Development vs Deployed Application](#Development-vs-Deployed-Application)
   - [Identified Issues During Deployment](#Identified-Issues-During-Deployment)
@@ -451,9 +452,11 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 4. To create your local clone, press the 'Enter' key.
 
-5. Open an internet browser.
+#### Running The Application
 
-6. Run the index.html file to initiate the application.
+1. Open an internet browser.
+
+2. Run the index.html file to initiate the application.
 
 #### Post Deployment Tests
 
