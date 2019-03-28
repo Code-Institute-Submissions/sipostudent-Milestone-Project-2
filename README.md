@@ -29,8 +29,13 @@
   - [Additional-Points](#Additional-Points)
   - [Tested-Sections-1-HTML-CSS](#Tested-Sections-1-HTML-CSS)
   - [Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework](#Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework)
+  - [Identified Issues During Testing](#Identified-Issues-During-Testing)
 - [Deployment](#Deployment)
-  - [Identified-Issues](#Identified-Issues)
+  - [Application Location](#Application-Location)
+  - [Cloning The Repository](#Cloning-The-Repository)
+  - [Post Deployment Tests](#Post-Deployment-Tests)
+  - [Development vs Deployed Application](#Development-vs-Deployed-Application)
+  - [Identified Issues During Deployment](#Identified-Issues-During-Deployment)
   - [Result](#Result)
 - [Credits](#Credits)
   - [Content](#Content)
@@ -444,11 +449,11 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
    - > \$ git clone https://sipostudent.github.io/Milestone-Project-2/
 
-4. To create your local clone, press Enter
+4. To create your local clone, press the 'Enter' key.
 
 5. Open an internet browser.
 
-6. Run the index.html file to initiate the application
+6. Run the index.html file to initiate the application.
 
 #### Post Deployment Tests
 
