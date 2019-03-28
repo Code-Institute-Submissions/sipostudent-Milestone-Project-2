@@ -81,23 +81,23 @@ Reproduce a simple single-player memory game, suitable for website usage, and in
 
 - From research looking into apps which are similar in scope to that of the project requirement, I noticed that many adopted a circular user interface (UI) style alike to that of the [original Simon (game) product](<https://en.wikipedia.org/wiki/Simon_(game)> "Demonstration: Simon game project") of allowing a user to interact, they generally had little to no page/scale responsiveness and poor rendering. In my opinion, which is subjective, of course, I feel that the design structure used for the original real-world physical Simon game product diminishes the user experience when applied to a website format. For a quick look at the UI developed for this project, please refer to the image animations below. Alternatively, you can access a live demonstration of the Simon game project app by clicking [here](https://sipostudent.github.io/Milestone-Project-2/ "Demonstration: Simon game project").
 
-#### Tablet-Display
+#### Tablet Display
 
 - Please note, except a slight difference in page/scale responsiveness, desktop applies the same UI.
 
 <img src="assets/img/tabletSimon.gif" width="300">
 
-#### Mobile-Display
+#### Mobile Display
 
 - This image animation represents the standard UI across most modern mobile devices.
 
 <img src="assets/img/mobileSimon.gif" width="300">
 
-#### Additional-Note
+#### Additional Note
 
 - Games generally require the user's to interact consistently; thus, the developed app is in a way that keeps things dense as opposed to thinly dispersed or scattered across multiple separate pages.
 
-#### Colour-Scheme
+#### Colour Scheme
 
 - In the original Simon (game) colours differentiated the four wide plastic arcs on the face of the device, which consisted of blue, yellow, red, and green. To add some originality, a set of related colours has been utilised as an inspirational alternative to the original colour choice which entails the following:
 
@@ -203,7 +203,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
 ## Technologies
 
-#### Languages-Frameworks-Tools
+#### Languages Frameworks Tools
 
 - [HTML5](https://www.w3.org/TR/html5/ "HTML5 Official Site")
 
@@ -240,7 +240,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
   - Source for all utilised icons
 
-#### Other-Resources
+#### Other Resources
 
 - https://getbootstrap.com/
 - https://www.w3schools.com/
@@ -249,7 +249,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
 ## Features
 
-#### Existing-Features
+#### Existing Features
 
 Because the website uses a 'single page’ design, the encapsulation of all code or content is within just one document (index.html) was adequate.
 
@@ -313,7 +313,7 @@ Because the website uses a 'single page’ design, the encapsulation of all code
      - Type = Sound Stab
      - Purpose = Syncs with BtnBlue
 
-#### Features-Left-to-Implement
+#### Features Left to Implement
 
 - Game Tempo – should speed up incrementally, perhaps on the 5th, 9th and then if modification of the game happened for winning completion number of 20 as opposed to the current number of 10, then perhaps another speed increase on the 13th step, but all subject to change pre-implementation.
 
@@ -327,11 +327,11 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 ## Testing
 
-#### Key-Points
+#### Key Points
 
 - N/A
 
-#### Tools-and-Methods-Used-for-Testing
+#### Tools and Methods Used for Testing
 
 - HTML
   - Freeformatter.com https://www.freeformatter.com/
@@ -342,7 +342,7 @@ Because the website uses a 'single page’ design, the encapsulation of all code
   - JS Hint https://jshint.com/
   - JS Lint https://www.jslint.com/
 
-#### Additional-Points
+#### Additional Points
 
 - Both virtual and real device tests were run to test and access the functionality of the app and identify any potential errors. Also, and although the app UI aesthetics are not a high priority requirement for this project, the app responsiveness was also tested by resizing the window with every addition of new code. Please see below a full list of devices used in the testing phase:
 
@@ -384,7 +384,7 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 - Website responsiveness was also tested by resizing the window with every addition of a new code sequence.
 
-#### Tested-Sections-1-HTML-CSS
+#### Tested Sections 1 HTML CSS
 
 - External links to third party websites and code authors GitHub repository.
 
@@ -398,7 +398,7 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 - Checked margins and padding of the container (sections) to ensure the content within it did not look disproportionate on various screen sizes, individually smaller devices.
 
-#### Tested-Sections-2-JavaScript-Using-The-Jasmine-Framework
+#### Tested Sections 2 JavaScript Using The Jasmine Framework
 
 - To run tests performed by Jasmine, go into the folder entitled ‘Jasmine’ and view the file called ‘indexJasmine.html’ inside of a web browser.
 
@@ -417,13 +417,48 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
   - I made conscious mistakes in normal mode to guarantee that the blunder tone played, the right message notification appeared, and the game sequences resumed shortly afterwards and kept on working effectively.
 
+#### Identified Issues During Testing
+
+- Stage 1 control on Simon.
+
+- Stage 2 press a button.
+
+  - The issue is the application gives out the "invalid input" warning and afterwards it will not enable the client to begin game play before shutting off the game and reinitiating.
+
+  - The next issue, play the game for example. For example until level 4, power off the game, turn on game, press a button, and it proceeds from past game level 4; it does not reset.
+
 ## Deployment
 
-- Used GitHub Pages to deploy the final version (https://sipostudent.github.io/Milestone-Project-2/).
+#### Application Location
+
+- Used GitHub Pages to deploy the final version
+  - (https://sipostudent.github.io/Milestone-Project-2/).
+
+#### Cloning The Repository
+
+1. Open Git Bash.
+
+2. Change the present working directory to the area where you wish to place the cloned directory.
+
+3. Type git clone, and after that paste the URL you replicated in Step 2.
+
+   - > \$ git clone https://sipostudent.github.io/Milestone-Project-2/
+
+4. To create your local clone, press Enter
+
+5. Open an internet browser.
+
+6. Run the index.html file to initiate the application
+
+#### Post Deployment Tests
 
 - All the tests performed before deployment was processed a second time on the deployed final version.
 
-#### Identified-Issues
+#### Development vs Deployed Application
+
+- There is no difference between either the development and deployed versions of the application.
+
+#### Identified Issues During Deployment
 
 - N/A
 
