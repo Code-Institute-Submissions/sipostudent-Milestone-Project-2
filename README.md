@@ -425,7 +425,7 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 #### Identified Issues During Testing
 
-- Stage 1 control on Simon.
+- Stage 1 power on application (Simon).
 
 - Stage 2 press a button.
 
