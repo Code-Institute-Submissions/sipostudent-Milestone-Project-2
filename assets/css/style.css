@@ -28,6 +28,17 @@ body {
     text-transform: uppercase;
 }
 
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+    color: rgba(248, 249, 250, 1);
+
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(248, 249, 250, 1);
+    border-color: rgba(248, 249, 250, 1);
+}
+
 /* UPPER GAME BACKBOARD TOP */
 .background-piece {
     background-image: linear-gradient(120DEG, #1D89F4, #00DB78, #F7BF18, #D33131);
