@@ -211,11 +211,11 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
 #### Languages Frameworks Tools
 
-- [HTML5](https://www.w3.org/TR/html5/ "HTML5 Official Site")
+- [HTML](https://www.w3.org/TR/html5/ "HTML5 Official Site")
 
   - Semantic markup language utilised as the shell of the site.
 
-- [CSS3](https://www.w3.org/Style/CSS/ "Cascading Style Sheets Official Site")
+- [CSS](https://www.w3.org/Style/CSS/ "Cascading Style Sheets Official Site")
 
   - Cascading Style Sheets as the design of the site.
 
@@ -234,7 +234,7 @@ The physical retail Simon (game) product has sound in addition to lighted button
   - One unused variable
     - sound9 located at line 23/index.js
 
-- [Bootstrap - v4.1.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/ "Bootstrap Official Site")
+- [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/ "Bootstrap Official Site")
 
   - Utilised for developing the entire UI and consistent throughout
 
@@ -242,16 +242,15 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
   - Saira font applied across the entire website
 
-- [Font Awesome - v5.0.13](https://fontawesome.com/ "Fontawesome Official Site")
+- [Font Awesome](https://fontawesome.com/ "Fontawesome Official Site")
 
   - Source for all utilised icons
 
 #### Other Resources
 
-- https://getbootstrap.com/
-- https://www.w3schools.com/
-- https://stackoverflow.com/
-- https://slack.com/
+- [w3schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Slack](https://slack.com/)
 
 ## Features
 
@@ -340,13 +339,19 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 #### Tools and Methods Used for Testing
 
 - HTML
-  - Freeformatter.com https://www.freeformatter.com/
+
+  - [Freeformatter](https://www.freeformatter.com/)
+
+  - [The W3C Markup Validation Service](https://validator.w3.org/)
+
 - CSS
-  - Freeformatter.com https://www.freeformatter.com/
+
+  - [The W3C Markup Validation Service](https://jigsaw.w3.org/css-validator)
+
 - JavaScript
 
-  - JS Hint https://jshint.com/
-  - JS Lint https://www.jslint.com/
+  - [JS Hint](https://jshint.com/)
+  - [JS Lint](https://www.jslint.com/)
 
 #### Additional Points
 
@@ -435,22 +440,17 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 ## Deployment
 
-#### Application Location
-
-- Used GitHub Pages to deploy the final version
-  - (https://sipostudent.github.io/Milestone-Project-2/).
-
 #### Cloning The Repository
 
 1. Open Git Bash.
 
 2. Change the present working directory to the area where you wish to place the cloned directory.
 
-3. Type git clone, and after that paste the URL you replicated in Step 2.
+3. Clone the repository or use the link below.
 
-   - > \$ git clone https://sipostudent.github.io/Milestone-Project-2/
-
-4. To create your local clone, press the 'Enter' key.
+   ```console
+   git clone https://sipostudent.github.io/Milestone-Project-2/
+   ```
 
 #### Running The Application
 
@@ -458,21 +458,33 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 
 2. Run the index.html file to initiate the application.
 
-#### Post Deployment Tests
+#### Deploying to GitHub Pages
 
-- All the tests performed before deployment was processed a second time on the deployed final version.
+- Stage 1: Create Repository for the application you wish to publish.
 
-#### Development vs Deployed Application
+  ```console
+  https://github.com/new
+  ```
 
-- There is no difference between either the development and deployed versions of the application.
+- Stage 2: Push Your Code to github.
 
-#### Identified Issues During Deployment
+  - The html file entitled index.html will be published as the landing page. In the event that there is no index.html document, at that point it scans for README.md record and that markdown document will be published as the landing page.
 
-- N/A
+- Stage 3: Go to Settings Click on the settings tab.
 
-#### Result
+  - These settings are specific to the management of the repository.
 
-- I would suffice this was a successful deployment. The achievement of all project requirements was successful, and the game app has indeed proven to be functional, user-friendly, and aesthetically pleasing.
+  ```console
+  git clone https://github.com/YOURGITHUBNAME/YOURREPONAME/settings
+  ```
+
+- Stage 4: Publish GitHub Page Scroll down to GitHub Pages area and select master branch (or gh-pages branch)
+
+- Stage 5: Go To Website You can go to the published site after 15– 20 seconds. Your webpage is published at
+
+```console
+https://YOURGITHUBNAME.github.io/YOURREPONAME/
+```
 
 ## Credits
 
@@ -483,3 +495,7 @@ Because the website uses a 'single page’ design, the encapsulation of all code
 #### Acknowledgements
 
 - I received inspiration for this project from visiting [miniclip.com](https://www.miniclip.com/games/en/ "Miniclip Official Site"), and searching Google Images for Simon (game) renditions which lead me to specific compositions, but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
+
+#### Disclaimer
+
+This is for educational purposes only.
