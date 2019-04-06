@@ -219,10 +219,6 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
   - Cascading Style Sheets as the design of the site.
 
-- [jQuery](http://jquery.com/ "Cascading Style Sheets Official Site")
-
-  - HTML document traversal and manipulation, event handling.
-
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript Official Site")
 
   - Metrics
@@ -233,6 +229,10 @@ The physical retail Simon (game) product has sound in addition to lighted button
 
   - One unused variable
     - sound9 located at line 23/index.js
+
+- [jQuery](http://jquery.com/ "Cascading Style Sheets Official Site")
+
+  - HTML document traversal and manipulation, event handling.
 
 - [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/ "Bootstrap Official Site")
 
